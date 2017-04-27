@@ -7,6 +7,8 @@
 
 <h1>All Articles</h1>
 
+
+
 <ul id="articles">
 	<% @articles.each do |article| %>
 		<li>
@@ -15,7 +17,11 @@
 	<% end %>
 </ul>
 
-<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+
+
+<%= link_to "New Article", new_article_path, class: "new_article" %>
+
+<%= link_to "Tags", tags_path, class: "new_article" %>
 
 </body>
 </html>
